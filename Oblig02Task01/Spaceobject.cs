@@ -4,17 +4,17 @@ namespace SpaceSim
     public class SpaceObject
     {
         protected String name;
-        protected int orbitalRadius;
-        protected int orbitalPeriod;
-        protected int objectRadius;
-        protected int rotationalPeriod;
+        protected double orbitalRadius;
+        protected double orbitalPeriod;
+        protected double objectRadius;
+        protected double rotationalPeriod;
         protected string objectColor;
         public SpaceObject(
             String name, 
-            int orbitalRadius, 
-            int orbitalPeriod,
-            int objectRadius,
-            int rotationalPeriod,
+            double orbitalRadius, 
+            double orbitalPeriod,
+            double objectRadius,
+            double rotationalPeriod,
             string objectColor
         ) {
             this.name = name;
@@ -30,14 +30,14 @@ namespace SpaceSim
     }
     public class Star : SpaceObject
     {
-        public Star(String name) : base(name) { }
+        public Star(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw() {
             Console.Write("Star: ");
             base.Draw();
         }
     }
     public class Planet : SpaceObject {
-        public Planet(String name) : base(name) { }
+        public Planet(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw() {
             Console.Write("Planet: ");
             base.Draw();
@@ -45,7 +45,7 @@ namespace SpaceSim
     }
     public class Moon : SpaceObject
     {
-        public Moon(String name) : base(name) { }
+        public Moon(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw() {
             Console.Write("Moon: ");
             base.Draw();
@@ -54,7 +54,7 @@ namespace SpaceSim
     // Task 2
     public class Comet : SpaceObject
     {
-        public Comet(String name) : base(name) { }
+        public Comet(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw()
         {
             Console.Write("Comet: ");
@@ -63,7 +63,7 @@ namespace SpaceSim
     }
     public class Asteroid : SpaceObject
     {
-        public Asteroid(String name) : base(name) { }
+        public Asteroid(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw()
         {
             Console.Write("Asteroid: ");
@@ -73,7 +73,7 @@ namespace SpaceSim
     // asteroids, asteroid belts, and dwarf
     public class AsteroidBelt : Asteroid
     {
-        public AsteroidBelt(String name) : base(name) { }
+        public AsteroidBelt(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw()
         {
             Console.Write("AsteroidBelt: ");
@@ -82,7 +82,7 @@ namespace SpaceSim
     }
     public class DwarfStar : Star
     {
-        public DwarfStar(String name) : base(name) { }
+        public DwarfStar(String name, double orbitalRadius, double orbitalPeriod, double objectRadius, double rotationalPeriod, string objectColor) : base(name, orbitalRadius, orbitalPeriod, objectRadius, rotationalPeriod, objectColor) { }
         public override void Draw()
         {
             Console.Write("Dwarf star: ");
