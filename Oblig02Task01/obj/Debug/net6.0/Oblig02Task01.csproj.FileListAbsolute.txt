@@ -28,3 +28,6 @@ C:\Users\chris\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\O
 C:\Users\chris\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\obj\Debug\net6.0\ref\Oblig02Task01.dll
 C:\Users\chris\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\obj\Debug\net6.0\Oblig02Task01.pdb
 C:\Users\chris\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\obj\Debug\net6.0\Oblig02Task01.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\bin\Debug\net6.0\Classes.dll
+C:\Users\Admin\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\bin\Debug\net6.0\Classes.pdb
+C:\Users\Admin\OneDrive\Skole\HVL\6 Semester\DAT154\Assignment 2\Oblig02Task01\Oblig02Task01\obj\Debug\net6.0\Oblig02Task01.csproj.CopyComplete
